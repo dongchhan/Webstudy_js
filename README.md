@@ -10,20 +10,20 @@
 
 - JS가 HTML을 제어하는 언어임을 실습 결과물을 통해 느껴봄  
 
-## 3.HTML과 JS의 만남 : script 태그
+## 3.HTML과 JS의 만남 : script 태그 
 - `<script>여기에 JS 코드 작성</script>`  
 
 - 정적인 HTML, 동적인 JS   
 ex) 1+1 -> 1+1 vs 2
 
-## 4.HTML과 JS의 만남 : 이벤트  
+## 4.HTML과 JSㅢ 만남 : 이벤트
 - html 안에서 특정 조건에 이벤트를 발생시키는 attribute
 해당 attribute 뒤에는 JS 코드가 들어가도록 돼있음
 - `<input type="button" value="hi" onclick="alert('hi')">`  
 - `<input type="text" onchange="alert('changed')">`  
 - `<input type="text" onkeydown="alert('key down!')">`  
 
-## 5.HTML과 JS의 만남 (콘솔)
+## 5.HTML과 JS의 만남 : 콘솔 
 - 브라우저 검사기 console 창에서 파일 생성 없이 JS 코드를 동작시켜볼 수 있음  
 ex) 글자 수 세기 
 
