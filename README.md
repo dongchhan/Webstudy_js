@@ -31,3 +31,11 @@ ex) 글자 수 세기
 
 - 페이스북 댓글 이벤트 당첨자 추첨 예시  
 
+## 6.데이터타입 - 문자열과 숫자
+- 데이터타입(자료형) ; Boolean, Null, Undefined, Number, String, Symbol  
+
+- `str.length`
+- `str.toUpperCase()`
+- 등등의 여러 methods 체험 
+
+## 7.변수와 대입 연산자 
