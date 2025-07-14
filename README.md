@@ -66,4 +66,13 @@ __Agenda__
 - Style 태그: Style 속성처럼 적용할 태그마다 일일히 작성하지 않아도 됨. 
 - `<style></style>` 안에 CSS 작성 
 - `js{"font-weight:bold; color:red;}` : 태그 명이 js인 태그에 적용 
-- `.js{"font-weight:bold; color:red;}` : class id가 js인 태그에 적용 
+- `.js{"font-weight:bold; color:red;}` : class가 js인 태그에 적용 
+
+## 11.CSS기초: 선택자(Selector)
+- `#first{color:green;}` : id가 first인 태그에 적용
+- class와 달리 id는 유일해야함 
+- 우선순위: id > class > tagname
+
+## 12.제어할 태그 선택하기
+- 
+
