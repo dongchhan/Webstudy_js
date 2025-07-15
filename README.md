@@ -49,10 +49,14 @@ ex) 글자 수 세기
 ## 9-11.CSS 기초
 __Agenda__
 * CSS는 어떤 목적의 언어인가?
+  - HTML을 꾸미기 위한 목적
 * CSS를 웹페이지에 삽입하는 방법은 무엇인가?
+  1. 태그 내 Style 속성 
+  2. Style 태그 내 CSS문 작성 (Selector 사용)
 * style 속성은 무엇인가?
+  - 해당 태그에 CSS를 적용하는 것
 * 선택자가 무엇인가?
-- 소스코드 웹페이지에 있음. 
+  - Style 태그 내에서 CSS를 작성할 때, 적용 대상 태그를 지정하는 것 
 
 ## 9.CSS기초: Style 속성 
 - `<h2 style="backgound-color:coral; color:powderblue">JavaScript</h2>`
@@ -74,5 +78,8 @@ __Agenda__
 - 우선순위: id > class > tagname
 
 ## 12.제어할 태그 선택하기
-- 
+- JavaScript문 내에서 HTML 태그를 선택하여 제어하는 방법 
+- `document.querySelector('body')` : `<body>`태그를 선택 
+- `document.querySelector('body').style.backgoundColor = 'black;` : `<body>`태그의 스타일 속성을 변경 
+
 
