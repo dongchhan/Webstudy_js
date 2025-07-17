@@ -82,4 +82,55 @@ __Agenda__
 - `document.querySelector('body')` : `<body>`태그를 선택 
 - `document.querySelector('body').style.backgoundColor = 'black;` : `<body>`태그의 스타일 속성을 변경 
 
+## 13.프로그램,프로그래밍,프로그래머
+- 프로그램 -> 순서라는 의미가 들어있음 
+- 프로그래밍 -> 순서를 만드는 행위
+- 프로그래머 -> 순서를 만드는 사람 
 
+- HTML은 시간의 순서에 따라 적용되는 언어가 아님 -> 프로그래밍 언어X
+- JavaScript는 시간의 순서에 따라서 여러 기능이 실행되어야 함 -> 프로그래밍 언어 O
+
+## 14~16 조건문 기초
+### 14.조건문 예고
+### 15.비교 연산자와 Boolean 데이터 타입 
+- `document.write();` : html에 내용 추가 
+- `document.write(1===1);` : 비교 연산자 '===' 
+- `&lt;`: '<'; less than 
+### 16.조건문
+```javascript
+if(true){
+    document.write('true')
+} else {
+    document.wrtie('false')
+}
+```
+
+## 17.조건문의 활용
+- 조건문을 통해 button을 토글 스위치 형태로 구현 
+- `document.querySelector('#night_day).value` : 해당 버튼 태그의 value를 선택. 
+
+## 18.리팩토링 중복의 제거
+- 코드의 중복 및 비효율을 개선
+- 'this': 해당 태그 자신을 가르킴 
+`document.querySelector('#night_day).value`-> `this.value`
+- 중복해서 등장하는 태그를 변수로 선언 
+`var target = document.querySelector('#body');`
+
+## 19~20 배열, 반복문 기초
+### 19.반복문 예고
+### 20.배열
+- 선언:
+`var coworkers = ["egoing", "leezche"];`
+- 인덱싱:
+`coworkers[0]`
+- Count:
+`coworkers.length;`
+- 추가:
+`coworkers.push("duru")`
+### 21.반복문
+> 의문에 대한 추가 탐색 내용
+> `document.write()`는 HTML문서 내 해당 `<script></script>`태그의 위치에 적용됨
+> `<script>` 태그는 HTML의 파싱 과정 중 멈추고 실행되기 때문에, `</body>`의 직전에 일반적으로 사용
+> 'async', 'defer' 속성을 추가하여 HTML파싱 흐름을 제어하는 방법이 있음
+> `<script async src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, 다운로드가 끝나는 즉시 실행하므로 HTML 파싱이 중간에 멈출 수 있음. 순서가 중요하지 않은 독립적인 스크립트에서 사용
+> `<script defer src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, HTML 파싱이 모두 끝난 후 실행, `</body>` 앞에 두는 것과 효과가 비슷하며, 순서가 보장됨 
