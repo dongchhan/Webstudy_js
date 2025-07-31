@@ -112,7 +112,7 @@ if(true){
 ## 18.리팩토링 중복의 제거
 - 코드의 중복 및 비효율을 개선
 - 'this': 해당 태그 자신을 가르킴 
-`document.querySelector('#night_day).value`-> `this.value`
+` `document.querySelector('#night_day).value`--'this.value`
 - 중복해서 등장하는 태그를 변수로 선언 
 `var target = document.querySelector('#body');`
 
@@ -129,8 +129,8 @@ if(true){
 `coworkers.push("duru")`
 ### 21.반복문
 > 의문에 대한 추가 탐색 내용
-> `document.write()`는 HTML문서 내 해당 `<script></script>`태그의 위치에 적용됨
-> `<script>` 태그는 HTML의 파싱 과정 중 멈추고 실행되기 때문에, `</body>`의 직전에 일반적으로 사용
+- `'document.write()`는 HTML문서 내 해당 `<script></script>`태그의 위치에 적용됨
+- `'<script>` 태그는 HTML의 파싱 과정 중 멈추고 실행되기 때문에, `</body>`의 직전에 일반적으로 사용
 > 'async', 'defer' 속성을 추가하여 HTML파싱 흐름을 제어하는 방법이 있음
-> `<script async src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, 다운로드가 끝나는 즉시 실행하므로 HTML 파싱이 중간에 멈출 수 있음. 순서가 중요하지 않은 독립적인 스크립트에서 사용
-> `<script defer src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, HTML 파싱이 모두 끝난 후 실행, `</body>` 앞에 두는 것과 효과가 비슷하며, 순서가 보장됨 
+- `'<script async src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, 다운로드가 끝나는 즉시 실행하므로 HTML 파싱이 중간에 멈출 수 있음. 순서가 중요하지 않은 독립적인 스크립트에서 사용
+- `'<script defer src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, HTML 파싱이 모두 끝난 후 실행, `</body>` 앞에 두는 것과 효과가 비슷하며, 순서가 보장됨 
