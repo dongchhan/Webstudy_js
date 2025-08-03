@@ -16,7 +16,7 @@
 - 정적인 HTML, 동적인 JS   
 ex) 1+1 -> 1+1 vs 2
 
-## 4.HTML과 JSㅢ 만남 : 이벤트
+## 4.HTML과 JS의 만남 : 이벤트
 - html 안에서 특정 조건에 이벤트를 발생시키는 attribute
 해당 attribute 뒤에는 JS 코드가 들어가도록 돼있음
 - `<input type="button" value="hi" onclick="alert('hi')">`  

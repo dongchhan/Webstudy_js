@@ -1,7 +1,14 @@
-<h1>Loop & Array</h1>
+<!-- 반복문 활용 예시; 
+동료 이름 coworkers 배열에 넣고, 그에 맞춰서 링크 ul 반복 생성 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Loop & Array</h1>
     <script>
       var coworkers = ['egoing','leezche','duru','taeho'];
-    </script>
+      </script>
     <h2>Co workers</h2>
     <ul>
       <script>
@@ -10,5 +17,7 @@
           document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
           i = i + 1;
         }
-      </script>
+        </script>
     </ul>
+  </body>
+</html>
