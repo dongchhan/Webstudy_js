@@ -116,7 +116,7 @@ if(true){
 - 중복해서 등장하는 태그를 변수로 선언 
 `var target = document.querySelector('#body');`
 
-## 19~20 배열, 반복문 기초
+## 19~22 배열, 반복문 기초
 ### 19.반복문 예고
 ### 20.배열
 - 선언:
@@ -134,3 +134,16 @@ if(true){
 - 'async', 'defer' 속성을 추가하여 HTML파싱 흐름을 제어하는 방법이 있음
 - `'<script async src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, 다운로드가 끝나는 즉시 실행하므로 HTML 파싱이 중간에 멈출 수 있음. 순서가 중요하지 않은 독립적인 스크립트에서 사용
 - `'<script defer src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, HTML 파싱이 모두 끝난 후 실행, `</body>` 앞에 두는 것과 효과가 비슷하며, 순서가 보장됨 
+### 22.배열과 반복문 
+- 배열에 들어있는 string 개수만큼 해당 string 별 HTML 링크를 생성하는 JS 코드 
+
+## 23.배열과 반복문의 활용 
+- day/night 버튼에 a태그(링크)색 일괄 변경 
+- `var alist = document.querySelectorAll('a');`
+- `alist[i].style.color = 'powderblue';`
+
+## 24~25 함수 기초
+### 24.함수예고
+- 기존 day/night 버튼 클릭시 적용되어야 할 JS코드를 `<script>`태그 내에서 `nightDayHandler()` 함수로 정의
+- 이후, HTML day/night 버튼 태그 내 onclick에서는 `nightDayHandler()` 함수를 적용하는 것으로 단순화
+### 25.함수
