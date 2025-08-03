@@ -131,6 +131,6 @@ if(true){
 > 의문에 대한 추가 탐색 내용
 - `'document.write()`는 HTML문서 내 해당 `<script></script>`태그의 위치에 적용됨
 - `'<script>` 태그는 HTML의 파싱 과정 중 멈추고 실행되기 때문에, `</body>`의 직전에 일반적으로 사용
-> 'async', 'defer' 속성을 추가하여 HTML파싱 흐름을 제어하는 방법이 있음
+- 'async', 'defer' 속성을 추가하여 HTML파싱 흐름을 제어하는 방법이 있음
 - `'<script async src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, 다운로드가 끝나는 즉시 실행하므로 HTML 파싱이 중간에 멈출 수 있음. 순서가 중요하지 않은 독립적인 스크립트에서 사용
 - `'<script defer src="..."></script>`: HTML 파싱과 병렬로 스크립트를 다운로드하고, HTML 파싱이 모두 끝난 후 실행, `</body>` 앞에 두는 것과 효과가 비슷하며, 순서가 보장됨 
