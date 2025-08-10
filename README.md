@@ -147,3 +147,7 @@ if(true){
 - 기존 day/night 버튼 클릭시 적용되어야 할 JS코드를 `<script>`태그 내에서 `nightDayHandler()` 함수로 정의
 - 이후, HTML day/night 버튼 태그 내 onclick에서는 `nightDayHandler()` 함수를 적용하는 것으로 단순화
 ### 25.함수
+- `function funcName () {}` 방식으로 함수 정의
+### 26.함수:매개변수와 인자
+- Input: Parameter(매개변수) & Argument(인자)
+- Output: Return(반환값)
