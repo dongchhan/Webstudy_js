@@ -142,12 +142,18 @@ if(true){
 - `var alist = document.querySelectorAll('a');`
 - `alist[i].style.color = 'powderblue';`
 
-## 24~25 함수 기초
+## 24~27 함수 기초
 ### 24.함수예고
-- 기존 day/night 버튼 클릭시 적용되어야 할 JS코드를 `<script>`태그 내에서 `nightDayHandler()` 함수로 정의
-- 이후, HTML day/night 버튼 태그 내 onclick에서는 `nightDayHandler()` 함수를 적용하는 것으로 단순화
 ### 25.함수
 - `function funcName () {}` 방식으로 함수 정의
 ### 26.함수:매개변수와 인자
 - Input: Parameter(매개변수) & Argument(인자)
 - Output: Return(반환값)
+### 27.함수(리턴)
+- 표현식: `1+1` 은 `2`에 대한 표현식 
+- 함수가 어떤 값의 표현식이 되게 하려면 return이 필요함
+
+## 28.함수의 활용
+- 기존 day/night 버튼 클릭시 적용되어야 할 JS코드를 `<script>`태그 내에서 `nightDayHandler()` 함수로 정의
+- 이후, HTML day/night 버튼 태그 내 onclick에서는 `nightDayHandler()` 함수를 적용하는 것으로 단순화
+

@@ -6,7 +6,7 @@
     <title>WEB2 - JavaScript</title>
     <meta charset="utf-8">
     <script>
-        function nightDayHandler (self) {
+        function nightDayHandler (self) {  // 매개변수 명을 self로 잡음
             var target = document.querySelector('body');
             if(self.value === 'night'){
                 target.style.backgroundColor = 'black';  
@@ -39,7 +39,8 @@
 
     <!--night/day 모드 버튼-->
     <input type="button" value="night" onclick="
-        nightDayHandler(this);  // 변경점, 함수로 대체
+        // 변경점, 함수로 대체
+        nightDayHandler(this);  // 이 함수가 tag 안에 있기 때문에 this는 이 tag를 의미
     ">
     <ol>
         <li><a href="1.html">HTML</a></li>
@@ -53,7 +54,8 @@
 
     <!--night/day 모드 버튼-->
     <input type="button" value="night" onclick="
-        nightDayHandler(this);  // 변경점, 함수로 대체
+        // 변경점, 함수로 대체
+        nightDayHandler(this);  
     ">
 </body>
 </html>
