@@ -1,20 +1,23 @@
-// 같은 JS코드를 여러 html파일에 사용해야될 때, JS파일 따로 만들어두기
+// JQuery를 사용
 var Links = {
     setColor: function (color){
-        var alist = document.querySelectorAll('a'); 
-        var i = 0;
-        while (i < alist.length) {
-            alist[i].style.color = color;
-            i = i + 1;
-        }
+        // var alist = document.querySelectorAll('a'); 
+        // var i = 0;
+        // while (i < alist.length) {
+        //     alist[i].style.color = color;
+        //     i = i + 1;
+        // }
+        $('a').css('color', color);  // jquery
     }
 }
 var Body = {
     setColor: function (color){
-        document.querySelector('body').style.color = color;
+        // document.querySelector('body').style.color = color;
+        $('body').css('color', color);
     },
     setBackgroundColor (color){
-        document.querySelector('body').style.backgroundColor = color;
+        // document.querySelector('body').style.backgroundColor = color;
+        $('body').css('backgroundColor', color)
     }
 }
 function nightDayHandler (self) {  
@@ -28,7 +31,7 @@ function nightDayHandler (self) {
         self.value = 'day';  
         
         // linkSetColor('powderblue');
-        Links.setColor('powderblue');
+        Links.setColor('yellow');
     } else {
         // bodySetBackgroundColor('white')
         Body.setBackgroundColor('white')
